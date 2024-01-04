@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: qic_db
+      MYSQL_USER: qic_user
+      MYSQL_PASSWORD: qic_pass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - ./.db_volume:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uqic_user", "-pqic_pass"]  # Health check command
+      interval: 10s            # Check the health every 10 seconds
+      timeout: 5s              # Time out if the health check command takes longer than 5 seconds
+      retries: 3               # Number of retries before considering the container unhealthy
+
+volumes:
+  db_data:
