@@ -23,4 +23,4 @@ COPY .docker/vhost.conf /etc/apache2/sites-enabled/000-default.conf
 # Fix vlume mapping of vendor folder ommition (bc fixion long loading issues on Windows)
 COPY vendor /var/www/html/vendor
 
-WORKDIR /var/www
+WORKDIR /var/www/html
