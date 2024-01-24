@@ -1,7 +1,9 @@
 FROM php:8.2-apache
 
-RUN chown -R www-data:www-data /srv/app \
-    && a2enmod rewrite
+
+RUN a2enmod rewrite
+# RUN chown -R www-data:www-data /srv/app \
+#     && a2enmod rewrite
 
 # PHP and apache copy config
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"

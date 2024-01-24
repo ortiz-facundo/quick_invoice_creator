@@ -1,6 +1,9 @@
-// Styles
-import 'bootstrap';
-import './main.scss';
+// Import our custom CSS
+import './styles/app.scss';
 
-// Other imports
-import 'bootstrap/dist/js/bootstrap.bundle';
+// Import all of Bootstrap's JS
+import 'bootstrap';
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Code exec when Dom loaded
+});

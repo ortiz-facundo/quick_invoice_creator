@@ -15,6 +15,7 @@
     "@symfony/webpack-encore": "^4.5.0"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.2.3",
     "sass": "^1.69.5",
     "sass-loader": "^13.0.0"

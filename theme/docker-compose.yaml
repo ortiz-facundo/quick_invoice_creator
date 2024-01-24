@@ -5,10 +5,10 @@ services:
   php-apache-design:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: .docker/Dockerfile
     restart: always
     ports:
-      - 8081:80
+      - 8000:80
     volumes:
       - ./public:/var/www/html
 
