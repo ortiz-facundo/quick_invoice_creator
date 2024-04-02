@@ -1,0 +1,66 @@
+//
+//  Zennovia Design Template 2.0 - 2018
+//  Autor: Zennovia -Smart Software Solutions
+//
+
+
+// File compiler scss
+// ====================================================
+
+// Configuration --------------------
+@import "_mixin";
+@import "_scaffolding";
+
+@import "_utility";
+@import "_grid";
+
+
+// Section --------------------------
+@import "_header";
+@import "_panel-area";
+@import "_nav";
+@import "_main";
+@import "_section";
+@import "_footer";
+
+
+// Pages ---------------------------
+@import "_access-user";
+@import "_page-error";
+@import "home-examples-hero";
+
+
+
+// Components ----------------------
+@import "_icons";
+@import "_overlay";
+@import "_animation";
+@import "_card";
+@import "_card-ok";
+
+@import "_color";
+
+@import "_badge";
+@import "_alert";
+@import "_button";
+@import "_dropdown";
+@import "_modal";
+@import "_popover";
+@import "_checkboxes-all";
+
+@import "_tipography";
+@import "_login";
+@import "_list";
+@import "_pagination";
+@import "_selector";
+@import "_filter";
+@import "_form-general";
+@import "_form-layouts";
+
+@import "_widget";
+@import "_searchbars";
+
+
+
+// Responsive -----------------------
+@import "_media-queries";

@@ -1,0 +1,448 @@
+//
+//  Facundo Ortiz Design Template 2.0 - 2023
+//  Autor: Facundo Ortiz
+//
+
+
+// VARIABLES GLOBALES DE FODT Y DEL PROYECTO
+// FACUNDO ORTIZ DESIGN TEMPLATE (se pueden editar para el proyecto)
+// ====================================================
+
+// ?) SCAFFOLDING --------------------
+$headerHeight:             66px;
+$panelPrimaryWidth:        250px;
+$panelSecondaryWidth:      300px;
+
+
+
+// ?) Z-INDEX -------------------------------------------
+$zIndexHeader:           5000;
+$zIndexOverlay:          4779;
+$zIndexPanelPrimary:     4850;
+$zIndexPanelSecondary:   4800;
+$zIndexModal:            6000;
+$zIndexModalBackdrop:    5999;
+
+
+
+// ?) FONT --------------------
+// Font Family --//
+$fontFamilyBase: 'Open Sans', sans-serif;
+
+// Font Weight --/
+$fontWeightLight:     300;
+$fontWeightNormal:    400;
+$fontWeightBold:      600;
+$fontWeightBoldExtra: 700;
+// Font Size --//
+$fontSizeXSmall:      0.800em;  //
+$fontSizeSmall:       0.900em;  //
+$fontSizeBase:        13px;     //
+$fontSizeLarge:       1.250em;  //
+$fontSizeXLarge:      1.500em;  //
+
+
+
+// ?) COLOR --------------------
+$colorMain:               #3EADE2;
+$colorPrimary:            $colorMain;
+$colorMainLighten:        #a3d9f3;
+$colorMainDark:           #0A8AB7;
+$colorSecond:             #d3e239;
+$colorGrey:               #90A4AE;
+$colorGreyLight:          #bdc3c7;
+$colorGreyLighten:        #F1EFF0;
+$colorGreyDark:           #627b87;
+
+$colorDark:               #253544;
+
+$colorFont:               #666;
+
+$colorGold:               #e6c200;
+
+$colorRed:                 #f15b59;
+$colorRedLighten:          rgba(244,67,54,0.17);
+$colorRedDark:             #c55251;
+$colorGreen:               #76bb59;
+$colorTeal:                #009688;
+$colorTealLighten:         rgba(0,150,136,0.15);
+$colorLightBlue:           #72bdd8;
+$colorLightBlueLighten:    rgba(37,176,239,0.25);
+$colorDarkBlue:            #537f8f;
+$colorYellow:              #f19f43;
+$colorOrange:              #f19f43;
+$colorOrangeLighten:       rgba(255,152,0,0.17);
+$colorDarkLighten:         #2c3e50;
+
+
+// ?) NAV --------------------
+$navPrimarySectionFontSize:         10px;
+$navPrimarySectionFontWeight:       500;
+$navPrimarySectionTextTransform:    uppercase;
+$navPrimarySectionBackgroundColor:  rgba(0,0,0,.04);
+$navPrimarySectionPadding:          0.6em;
+$navPrimaryBtnBackgroundColor:      transparent;
+$navPrimaryBtnColor:                $colorFont;
+$navPrimaryBtnFontSize:             $fontSizeBase;
+$navPrimaryBtnTextTransform:        uppercase;
+$navPrimaryBtnPadding:              0.6em 0.6em;
+$navPrimaryBtnFontWeight:           400;
+$navPrimaryBtnIconFontSize:         16px;
+$navPrimaryBtnIconWidth:            24px;
+$navPrimaryBtnIconColor:            $colorFont;
+$navPrimaryBtnIconChevronFontSize:  $fontSizeSmall;
+$navPrimaryBtnIconChevronTop:       13px;
+$navPrimaryBtnIconChevronRight:     4px;
+// -- BotÃ³n activo
+$navPrimaryBtnBackgroundColorHover: rgba(0,0,0,.05);
+$navPrimaryBtnColorActive:           $colorMain;
+$navPrimaryBtnIconColorActive:       $colorMain;
+// -- BotÃ³n que despliega el dropdown
+$navPrimaryDropdownBtnColorActive:            $colorMain;
+$navPrimaryDropdownBtnIconColorActive:        $colorMain;
+$navPrimaryDropdownBtnIconChevronColor:       $colorFont;
+// -- Item dentro del dropdown
+$navPrimaryDropdownItemBackgroundColor:       transparent;
+$navPrimaryDropdownItemBtnColorActive:        $colorMain;
+$navPrimaryDropdownItemBtnIconColorActive:    $colorMain;
+$navPrimaryDropdownItemBtnCircleColorActive:  $colorMain;
+$navPrimaryDropdownItemTextTransform:         none;
+// -- Iconos derecha navbar
+$navButtons: white;
+
+// ?) REUTILIZABLE --------------------
+// -- util
+$colorBorder:             darken($colorGreyLighten, 5%);
+// -- box Shadow
+$boxShadowLight:               0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$boxShadowNormal:              0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.11);
+$boxShadowStrong:              0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+// -- label
+$labelTextColor:               $colorGrey;
+$labelTextBackgroundColor:     $colorGreyLighten;
+$labelTextFontSize:            11px;
+$labelTextTextTransform:       uppercase;
+$labelTextBorderRadius:        4px;
+$labelTextPadding:             0.2em 0.6em;
+// -- Badge
+$badgeBackgroundColor:         $colorGreyLighten;
+$badgeColor:                   $colorFont;
+$badgeBorderRadius:            2px;
+$badgePadding:                 0.05em 0.65em 0.3em 0.65em;
+$badgeColorColor:              rgba(255,255,255,.85);
+
+
+
+// ?) COMPONENTES --------------------
+// -- buttons
+$buttonBorderRadius:        4px;
+$buttonShadow:              $boxShadowLight;
+$buttonShadowFocus:         $boxShadowNormal;
+// -- alert
+$alertFontSize:                 14px;
+$alertBorderLeft:               6px solid rgba(0,0,0,.15);
+$alertTextColor:                rgba(255,255,255,.8);
+$alertBtnCloseColor:            #000000;
+$alertBtnCloseOpacity:          .3;
+$alertLinkColor:                rgba(37,37,37,.55);
+$alertBtnFontSize:              11px;
+$alertBtnColor:                 #ffffff;
+$alertBtnBackgroundColor:       rgba(0,0,0,.4);
+$alertBtnBorder:                1px solid rgba(0,0,0,.1);
+$alertBtnPadding:               0.1em 0.6em;
+$alertBtnBackgroundColorHover:  rgba(0,0,0,.5);
+$alertRedBackgroundColor:       $colorRed;
+$alertYellowBackgroundColor:    $colorYellow;
+$alertLightBlueBackgroundColor: $colorLightBlue;
+$alertGreenBackgroundColor:     $colorGreen;
+// -- popover
+$popoverHeaderBackgroundColor:         $colorGrey;
+$popoverHeaderColor:                   #ffffff;
+$popoverHeaderFontSize:                13px;
+$popoverHeaderFontWeight:              $fontWeightNormal;
+$popoverHeaderTextTransform:           uppercase;
+$popoverContentBackgroundColor:        #ffffff;
+$popoverContentFontSize:               12px;
+$popoverBtnBackgroundColor:            transparent;
+$popoverBtnIconFontSize:               20px;
+$popoverBtnIconColor:                  $colorMain;
+
+// -- Tooltip
+$tooltipStyle:                        1px dotted $colorFont;
+$tooltipColor:                        $colorFont;
+
+
+
+
+// ?) FORMULARIOS --------------------
+
+// -- placeholder
+$placeholderFontSize:         14px;
+$placeholderColor:            $colorGreyLight;
+
+// form control
+$formControlColor:        $colorGreyDark;
+$fieldHeight:             30px;
+$fieldClickColor:         $colorMain;
+$fieldFontSize:           14px;
+
+// field size
+$formFieldLG:         160px;
+$formFieldSM:         100px;
+$formFieldXS:         70px;
+
+
+// -- label
+$labelFormColor:          $colorFont;
+$labelFormFontSize:       13px;
+$labelFormFontWeight:     600;
+$labelFormFocusColor:     $colorMain;
+
+
+// select
+$selectArrowTop:       6px;
+$selectArrowRight:     0;
+$selectArrowWidth:     17px;
+$selectArrowHeight:    28px;
+$selectArrowContent:   "\f0d7";
+$selectArrowFamily:    "FontAwesome";
+$selectArrowFontSize:  12px;
+$selectArrowColor:     lighten($colorFont, 5%);
+$selectArrowBackgroundColor:     #ffffff;
+
+
+// group phone
+$formPhoneWidthXS:       84px;
+// Field Input
+$fileinputButtonSizeCircle:              36px;
+$fileinputButtonBackgroundColor:         $colorGreyLighten;
+$fileinputButtonIconColor:               $colorGreyDark;
+$fileinputListHeaderColor:               $colorFont;
+$fileinputListHeaderFontSize:            1em;
+$fileinputListHeaderFontWeight:          $fontWeightBold;
+$fileinputListBorderColor:               $colorBorder;
+$fileinputListItemBackgroundColor:       lighten($colorGreyLighten, 2%);
+$fileinputListItemTypeWidth:             60px;
+$fileinputListItemTypeFontSize:          1em;
+$fileinputListItemTypeColor:             $colorFont;
+$fileinputListItemTypeBackgroundColor:   transparent;
+$fileinputListItemNameFontSize:          1em;
+$fileinputListItemNameColor:             $colorFont;
+$fileinputListItemNameBackgroundColor:   transparent;
+$fileinputListItemActionsButtonColor:               $colorMain;
+$fileinputListItemActionsButtonBackgroundColor:     transparent;
+$fileinputListItemActionsWidthHeight:               34px;
+$fileinputListItemActionsIconColor:                 #ffffff;
+$fileinputListItemActionsIconCheckBackgroundColor:  $colorGreen;
+$fileinputListItemActionsIconTimesBackgroundColor:  $colorRed;
+$fileinputListItemErrorBackgroundColor:             $colorRedLighten;
+$fileinputListItemErrorColor:                       $colorRedDark;
+
+// switch
+$switchLabelFontSize:         12px;
+$switchLabelColor:            $colorFont;
+$switchBallBackgroundColor:   rgba(62,173,226,.4);
+$switchBallActiveBackgroundColor:   $colorMain;
+
+
+
+// -- checkbox - radio
+$checkboxLabelColor:             $colorFont;
+$checkboxLabelColorHover:        $colorMain;
+$checkboxLabelFontSize:          12px;
+$checkboxLabelIconoFontSize:     16px;
+$checkboxBorderColor:            $colorGreyLight;
+$checkboxBorderColorCheck:       $colorMain;
+$checkboxBackgroundColorCheck:   $colorMain;
+$checkboxBorderRadius:           4px;
+$checkboxDisabledOpacity:        .5;
+// -- collapse
+$collapseInFormHeaderBorderBottom:           1px solid $colorGreyLight;
+$collapseInFormHeaderHoverBackgroundColor:   lighten($colorGreyLighten, 3%);
+$collapseInFormHeaderIconColor:              $colorGreyLight;
+$collapseInFormHeaderIconHoverColor:         $colorFont;
+$collapseInFormHeaderIconCloseColor:         $colorFont;
+$collapseInFormHeaderIconOpenBackgrounColor: $colorMain;
+$collapseInFormHeaderIconOpenColor:          #ffffff;
+$collapseInFormRowHighlight:                 lighten($colorGreyLighten, 3%);
+
+// -- rating
+$ratingItemBackgroundColor:      $colorGreyLighten;
+$ratingItemColor:                $colorFont;
+$ratingItemSelectFontSize:       20px;
+$ratingItemSelectFontWeight:     $fontWeightBoldExtra;
+$ratingItemSelectColor:          $colorFont;
+$ratingIconColor:                $colorGreyLight;
+$ratingIconFontSize:             35px;
+$ratingIconSelectColor:          $colorGold;
+
+
+// disabled
+$formDisabledOpacity:                    0.6;
+$formFieldDisabledBackgroundColor:       $colorGreyLighten;
+
+
+
+// -- text
+$textHelpFontSize:             12px;
+$textHelpPaddingLeftRight:     4px;
+$textHelpMarginBottom:         2px;
+$textHelpColor:                $colorGrey;
+$textHelpErrorColor:           $colorRed;
+$characterTextSize:            10px;
+
+// -- disabled
+$backgroundColorDisabled:      $colorGreyLighten;
+
+
+
+// ?) PANTALLAS --------------------
+// -- login
+body.znv-access-user{
+  background: url('../images/bg-access-user.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.znv-access-user-card{
+  background: url('../images/bg-access-users-middle.png') no-repeat center center fixed !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 121px;
+}
+
+.znv-access-user-right{
+  background: url('../images/bg-access-users-middle.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.znv-register-user-middle{
+  background: url('../images/bg-access-users-middle.png') no-repeat center center fixed !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 40px;
+}
+
+$loginSectionWidth:         400px;
+$loginSectionTop:           16%;
+$loginSectionLeft:          10%;
+$loginSectionRight:         10%;
+$loginBrandAlign:           left;
+$loginBrandHeight:          46px;
+$loginBackgroundColor:      $colorDarkLighten;
+$loginFormLabelFontSize:    14px;
+$loginFormLabelColor:       rgba(255,255,255,.5);
+$loginFormLabelColorHover:  rgba(255,255,255,1);
+$loginFormLabelFontWeight:  $fontWeightBold;
+$loginFormInputColor:       #ffffff;
+$loginFormInputFontSize:    14px;
+$loginFormRadioCircleBorderColor:   rgba(255,255,255,.3);
+$loginFormRadioCircleBackgroundColor:   rgba(255,255,255,1);
+
+// -- body
+$colorBackgroundBody:     $colorGreyLighten;
+// -- header
+$colorHeaderBackground:     $colorMainDark;
+$colorHeaderName:           rgba(255,255,255,.98);
+
+
+
+
+
+// WIDGET - general
+$widgetHeight:                         74px;
+$widgetBoxShadow:                      $boxShadowNormal;
+$widgetBorderRadius:                   6px;
+$widgetBorder:                         1px solid rgba(0,0,0,.05);
+
+// -- default
+$widgetBackgroundColor:                $colorGreyLighten;
+$widgetBorderLeft:                     3px solid $colorGreyDark;
+$widgetIconColor:                      #ffffff;
+$widgetIconBackground:                 $colorGreyDark;
+$widgetIconFontSize:                   24px;
+$widgetIconOpacity:                    1;
+$widgetCircle:                         48px;
+$widgetImgHeight:                      54px;
+$widgetCategoryColor:                  $colorGreyDark;
+$widgetCategoryFontTransform:          none;
+$widgetCategoryFontSize:               13px;
+$widgetCategoryFontWeight:             $fontWeightBold;
+$widgetNumberColor:                    $colorGreyDark;
+$widgetNumberFontSize:                 28px;
+$widgetNumberFontWeight:               $fontWeightBold;
+// inverse
+$widgetInverseBorderLeftColor:         rgba(0,0,0,.2);
+$widgetInverseCategoryColor:           rgba(255,255,255,.9);
+$widgetInverseIconColor:               #ffffff;
+$widgetInverseIconBackgroundColor:     rgba(0,0,0,.2);
+$widgetInverseNumberColor:             rgba(255,255,255,1);
+$widgetInverseNumberTextShadow:        1px 1px 2px rgba(0,0,0,.4);
+
+
+// WIDGET - Panel
+$widgetPanelHeight:                    110px;
+$widgetPanelBackgrounColor:            #ffffff;
+$widgetPanelBorderLeft:                4px solid $colorGreyDark;
+
+$widgetPanelCircle:                    70px;
+$widgetPanelIconColor:                 #ffffff;
+$widgetPanelIconFontSize:              40px;
+$widgetPanelIconOpacity:               1;
+$widgetPanelIconBackgroundColor:       $colorGrey;
+$widgetPanelImgHeight:                 80px;
+
+$widgetPanelCategoryColor:             $colorFont;
+$widgetPanelCategoryFontTransform:     uppercase;
+$widgetPanelCategoryFontSize:          14px;
+$widgetPanelCategoryFontWeight:        $fontWeightBold;
+
+$widgetPanelNumberColor:               #000000;
+$widgetPanelNumberFontSize:            42px;
+$widgetPanelNumberFontWeight:          $fontWeightBold;
+
+
+// PANEL
+$panelColorTitle:             #000000;
+$panelFontSizeTitle:          2em;
+$panelFontWeightTitle:        $fontWeightBoldExtra;
+$panelColorSubtitle:          $colorGreyDark;
+$panelFontSizeSubtitle:       1.4em;
+$panelFontWeightSubtitle:     $fontWeightNormal;
+$panelColorSubtitleSpan:      $colorMain;
+$panelFontWeightSubtitleSpan: $fontWeightBold;
+
+
+// LISTADOS -----------------
+// -- header
+$listHeaderFontSize:              $fontSizeSmall;
+$listHeaderFontWeight:            $fontWeightBold;
+$listHeaderBackgroundColor:       rgba(0,0,0,.08);
+// -- button actions
+$listContentButtonActionFontSize:               13px;
+$listContentButtonActionWidth:                  36px;
+$listContentButtonActionHeight:                 28px;
+$listContentButtonActionColor:                  $colorFont;
+$listContentButtonActionBackgroundColor:        transparent;
+$listContentButtonActionColorHover:             $colorMain;
+$listContentButtonActionBackgroundColorHover:   rgba(0,0,0,.08);
+$listContentButtonActionBackgroundColorActive:  transparent;
+$listContentButtonActionColorActive:            $colorMain;
+// -- content
+$listContentImgMaxHeight:                       40px;
+$listContentIconFontSize:                      22px;
+$listContentIconColor:                         $colorFont;
+$listContentIconLinkColor:                      red;

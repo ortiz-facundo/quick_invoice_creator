@@ -1,0 +1,64 @@
+//
+//  Zennovia Design Template 2.0 - 2017
+//  Autor: Zennovia -Smart Software Solutions
+//
+
+
+// GRID
+// ====================================================
+
+// Line
+.znv-row{
+  @include make-row;
+  margin: {
+    left: 0;
+    right: 0;
+  }
+
+  // Column --
+  .znv-full,
+  .znv-half{
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+  }
+
+  .znv-half{
+    width: 50%;
+  }
+
+}
+
+.znv-small{
+  width: 25%;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+
+
+.znv-card-container{
+  > .znv-card-full{
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+
+// Bootstrap 4
+
+@function columns($columns,$total-columns){
+  @return $columns / $total-columns;
+}
+
+.znv-card-half{
+  float: left;
+  width: percentage(columns(6,12));
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.znv-card-small{
+  float: left;
+  width: percentage(columns(4,12));
+  padding-left: 14px;
+  padding-right: 14px;
+}

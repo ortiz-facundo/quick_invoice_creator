@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Quick Invoice Creator" />
-        <meta name="author" content="orti-facundo" />
-        <title>Quick Invoice Creator Theme</title>
+        <!-- Including common head -->
+        <?php include 'elements/_head.php'; ?>
 
-        <!-- Sheets include -->
-        <link href="build/app.css" rel="stylesheet" />
     </head>
     <body>
+        <?php include 'elements/_header.php'; ?>
         <!-- <header class="p-3 mb-3 border-bottom" style="user-select: text;">
             <div class="container" style="user-select: text;">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start" style="user-select: text;">
@@ -44,7 +40,7 @@
                 </div>
             </div>
         </header> -->
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; user-select: text;">
+        <!-- <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; user-select: text;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none" style="user-select: text;">
                 <svg class="bi pe-none me-2" width="40" height="32" style="user-select: text;"><use xlink:href="#bootstrap" style="user-select: text;"></use></svg>
                 <span class="fs-4" style="user-select: text;">Sidebar</span>
@@ -96,7 +92,7 @@
                     <li style="user-select: text;"><a class="dropdown-item" href="#" style="user-select: text;">Sign out</a></li>
                 </ul>
             </div>
-        </div>
+        </div> -->
 
         <!-- Scrypts include -->
         <script src="build/runtime.js"></script>

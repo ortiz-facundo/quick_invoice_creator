@@ -1,0 +1,22 @@
+//
+//  Zennovia Design Template 2.0 - 2017
+//  Autor: Zennovia -Smart Software Solutions
+//
+
+
+// SCAFFOLDING
+// ====================================================
+
+// Body -----------------------------------------------
+body{
+  background: {
+    color: $colorBackgroundBody !important;
+  }
+  color: $colorFont;
+  font: {
+    family: $fontFamilyBase;
+    size: $fontSizeBase;
+    weight: $fontWeightNormal !important;
+  }
+	overflow-x: hidden;
+}
